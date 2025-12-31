@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional ToDo List</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white shadow-xl rounded-xl p-6 w-full max-w-md">
+      <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">
+        <i class="fas fa-tasks text-blue-500 mr-2"></i>My ToDo List
+      </h1>
+
+      <!-- Input + Add Button -->
+      <div class="flex mb-4">
+        <input
+          id="todo-input"
+          type="text"
+          placeholder="Enter a new task"
+          class="flex-1 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+        <button
+          id="add-todo-button"
+          class="bg-blue-500 text-white px-5 py-3 rounded-r-lg hover:bg-blue-600 transition-colors font-medium"
+        >
+          <i class="fas fa-plus mr-2"></i>Add
+        </button>
+      </div>
+
+      <!-- Todo List -->
+      <div class="mt-6">
+        <h2 class="text-xl font-semibold mb-4 text-gray-700">
+          <i class="fas fa-list-check mr-2 text-blue-500"></i>Your Tasks
+        </h2>
+        <ul id="todo-list" class="space-y-3">
+          <!-- Tasks will appear here -->
+        </ul>
+      </div>
+      
+      <div class="mt-6 text-center text-sm text-gray-500">
+        <p><i class="fas fa-save text-green-500 mr-2"></i>Tasks are automatically saved</p>
+      </div>
+    </div>
+    <script src="project_04.js"></script>
+  </body>
+</html>
